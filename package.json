@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-attr-to-window",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "vite + pulgin 可以在index.html中给window添加属性",
   "main": "dist/index.mjs",
   "type": "module",
@@ -9,13 +9,14 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "homepage": "https://github.com/LittleZhaoLearnsFromTheFront/labmai-business-fe-frame",
+  "homepage": "https://github.com/LittleZhaoLearnsFromTheFront/vite-plugin-attr-to-window",
   "repository": {
     "type": "github",
     "url": "https://github.com/LittleZhaoLearnsFromTheFront/vite-plugin-attr-to-window.git"
   },
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "prepublish": "unbuild"
   },
   "files": [
     "dist"
