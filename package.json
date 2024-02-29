@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-attr-to-window",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "vite + pulgin 可以在index.html中给window添加属性",
   "main": "dist/index.mjs",
   "type": "module",
