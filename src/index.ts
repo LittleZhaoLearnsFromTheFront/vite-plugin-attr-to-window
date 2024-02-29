@@ -7,7 +7,17 @@ export default (attrs: { [key: string]: string }) => {
             Object.keys(attrs).forEach(key => {
                 attrString += `window.${key}="${attrs[key]}"\n`
             })
-            return html.replace(/<\/body>/, `<script>\n${attrString}\n</script>\n<\/body>`)
+            return {
+                html,
+                tags: [{
+                    tag: 'script',
+                    attrs: {
+                        type: 'module'
+                    },
+                    children: attrString,
+                    injectTo: 'head'
+                }]
+            }
         }
     }
 }
