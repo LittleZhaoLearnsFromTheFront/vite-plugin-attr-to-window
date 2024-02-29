@@ -11,9 +11,6 @@ export default (attrs: { [key: string]: string }) => {
                 html,
                 tags: [{
                     tag: 'script',
-                    attrs: {
-                        type: 'module'
-                    },
                     children: attrString,
                     injectTo: 'head'
                 }]
